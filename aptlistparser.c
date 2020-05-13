@@ -29,7 +29,7 @@ int main()
     char *found; 
     char line;
     char str[MAXCHAR];
-    if((file = fopen("aptapplist.txt","r"))!=NULL)
+    if((file = fopen("aptlist.txt","r"))!=NULL)
             {
                 // file exists
                 // Get number of apps
@@ -46,7 +46,7 @@ int main()
                 fclose(file);
                 // Read lines
                 colorprint("Saving Restore Script...\n", "yellow");
-                file = fopen("aptapplist.txt","r");
+                file = fopen("aptlist.txt","r");
                 file2 = fopen("aptrestore.sh","w");
                 fprintf(file2, "#!/bin/bash\n");
                 fprintf(file2, "echo %cAPT Restore Script v0.2%c\n", 34, 34);
