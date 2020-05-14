@@ -79,7 +79,7 @@ int main()
             }
             else
             {
-                colorprint("File not found\n", "red");
+                colorprint("File 'aptlist.txt' not found.\n", "red");
             }
     return(0);
 }
